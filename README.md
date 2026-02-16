@@ -1,67 +1,56 @@
-# Supportlytics: Data-Driven Optimization of IT Support Team Performance
+# Supportlytics: Optimization of IT Support Team Performance using Advanced Analytics
 
 ## Problem Statement
-Modern IT support environments handle thousands of incident tickets daily, making it difficult to monitor performance efficiency, workload distribution, and resolution delays.  
-This project aims to transform raw incident event logs into actionable analytics that help identify operational bottlenecks, optimize resolution time, and improve IT support team performance.
+IT support teams handle thousands of incident tickets daily, making it difficult to track workload distribution, resolution delays, and operational efficiency.  
+This project transforms raw incident event logs into actionable insights using Python and Power BI to identify performance gaps and optimize support operations.
 
 ---
 
-## Dataset Description
-The project uses the **Incident Management Process Enriched Event Log** dataset.
+## Dataset Overview
+Dataset used: Incident Management Process Enriched Event Log.
 
-- Source: Real-world ServiceNow incident data
-- Volume: ~25K incidents derived from 141K+ events
-- Key Fields:
-  - Priority
-  - Assignment Group
-  - Opened / Resolved timestamps
-  - Reassignment count
-  - Incident state
+The raw event-based dataset was processed into a ticket-level analytical dataset.
 
-Raw logs were flattened using Python to create one record per incident lifecycle.
+Key attributes:
+- Priority Levels
+- Assignment Groups
+- Resolution Time
+- Incident Lifecycle
 
 ---
 
-## Key Performance Indicators (KPIs)
+## KPIs Used
 - Total Tickets
-- Average Resolution Time (Hours)
-- Resolution Completion Rate
-- Ticket Distribution by Priority
+- Average Resolution Time
+- Resolution Success %
 - Resolution Speed Categories
-- Assignment Group Workload
 
 ---
 
-## Dashboard Overview
-The Power BI dashboard is structured into three analytical sections:
-
-### 1️⃣ Executive Overview
-High-level metrics showing ticket volume, average resolution time, and overall resolution success rate.
-
-### 2️⃣ Operational Performance
-Breakdown of workload vs performance across priority levels to detect inefficiencies.
-
-### 3️⃣ Team Efficiency
-Assignment group analysis highlighting workload imbalance and potential performance bottlenecks.
+## Dashboard Sections
+1. Executive Overview – High-level KPIs.
+2. Workload vs Performance – Priority-based analysis.
+3. System Efficiency – Resolution speed distribution.
+4. Team Performance – Assignment group workload insights.
 
 ---
 
 ## Key Insights
-- Moderate priority tickets dominate workload, indicating operational focus should shift beyond only critical issues.
-- Low priority tickets show longer resolution times, suggesting possible backlog or resource imbalance.
-- Majority of tickets are resolved quickly (<1 day), but long-tail incidents inflate average resolution time.
-- Certain assignment groups handle a disproportionately high number of tickets, indicating potential resource optimization opportunities.
+- Moderate priority tickets dominate workload.
+- Low priority tickets show longer resolution durations.
+- Majority of tickets resolve quickly but a long-tail of slow incidents impacts efficiency.
+- Certain assignment groups handle significantly higher ticket volumes.
 
 ---
 
-## Future Improvements & Recommendations
-- Add predictive models to estimate resolution time during ticket creation.
-- Introduce automation for repetitive low-priority tickets.
-- Expand dashboard with root-cause clustering using NLP.
+## Future Improvements
+- Predictive resolution time modeling.
+- Automation suggestions for repetitive incidents.
+- Advanced clustering for root-cause analysis.
 
 ---
 
-## 🛠 Tools Used
-Python (Pandas, NumPy) — Data Cleaning  
-Power BI — Dashboard & Analytics  
-Jupyter Notebook — Development Environment
+## Tools Used
+Python (Pandas, NumPy)  
+Power BI  
+Jupyter Notebook
